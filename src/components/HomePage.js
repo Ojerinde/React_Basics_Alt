@@ -8,7 +8,7 @@ const HomePage = (props) => {
 
   const clickHandler = () => {
     setNumber(function (previousState) {
-      return "Joel";
+      return previousState + 1
     });
   };
 
