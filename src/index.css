@@ -14,8 +14,7 @@ html {
 
 body {
   background-color: #ccc;
+  padding: 4rem 2rem;
   font-family: 'Red Hat Display', sans-serif;
-  font-weight: 700;
-  font-size: 4rem;
-  margin: 2rem;
+  font-weight: 300;
 }
