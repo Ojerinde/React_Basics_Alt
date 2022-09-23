@@ -9,7 +9,6 @@
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  padding: 0 2rem;
 }
 .form_label {
   color: rgba(67, 9, 9, 0.875);
@@ -21,7 +20,6 @@
 .form_input {
   width: 100%;
   font-size: var(--input-font);
-
   color: rgb(54, 53, 53);
   padding: 0.6rem 0.7rem;
   border-radius: 0.4rem;

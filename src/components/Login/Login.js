@@ -13,18 +13,18 @@ const Login = (props) => {
 
   useEffect(() => {
     // This is executed the first time useEffect is executed
-    const time = setTimeout(()=>{
+    const time = setTimeout(() => {
       // Remember this will be executed after 10s
-      console.log('I was Executed')
-    }, 10000)
+      console.log("I was Executed");
+    }, 10000);
 
     // The return function is not executed the first time the useEffect is executed
-    return ()=> {
-      console.log('Time is Starting again!')
+    return () => {
+      console.log("Time is Starting again!");
       // Clearing the time once the user type something.
-      clearTimeout(time)
-    }
-  }, [name]);// WHenever the name change, this useEffect is executed
+      clearTimeout(time);
+    };
+  }, [name]); // WHenever the name change, this useEffect is executed
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -34,8 +34,8 @@ const Login = (props) => {
   };
 
   return (
-    <Card className="box">
-      <form onSubmit={submitHandler}>
+    <Card className="login__box">
+      <form onSubmit={submitHandler} className="login__form">
         <Input
           label="Name"
           id="name"
@@ -48,7 +48,6 @@ const Login = (props) => {
       </form>
     </Card>
   );
-
 };
 export default Login;
 
