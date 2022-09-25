@@ -1,0 +1,27 @@
+header {
+  padding: 2rem;
+
+  background-color: rgba(77, 77, 230, 0.698);
+
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+a {
+  font-size: 4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(17, 17, 17);
+}
+
+.active {
+  color: white;
+  border: 1px solid white;
+  padding: 0.3rem 0.5rem;
+}

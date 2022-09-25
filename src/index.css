@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;800&display=swap");
 
 *,
 *::after,
@@ -15,6 +15,18 @@ html {
 body {
   background-color: #ccc;
   padding: 4rem 2rem;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   font-weight: 300;
+}
+
+div {
+  width: 100%;
+}
+
+p {
+  font-size: 4rem;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

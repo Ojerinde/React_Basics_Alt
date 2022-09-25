@@ -12,8 +12,8 @@ const Input = (props) => {
   // The function that is called whenever the input field is unfocused.
   const blurHandler = () => {
     // Getting the input field value by the help of the initialized useRef. Your data is always on the "current" object
-    const data = nameRef.current.value
-    console.log(data)
+    // const data = nameRef.current.value
+    
   };
 
   return (
