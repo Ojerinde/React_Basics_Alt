@@ -34,6 +34,7 @@ const Login = (props) => {
           placeholder="Enter your name"
           name="name"
           onChange={nameChangeHandler}
+          value={name}
         />
         <Button type="submit">Submit!</Button>
       </form>

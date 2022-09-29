@@ -3,6 +3,7 @@ import "./Input.css";
 
 const Input = (props) => {
   const { label, id, ...others } = props;
+  
 
   return (
     <>
