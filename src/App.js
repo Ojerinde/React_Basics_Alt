@@ -47,7 +47,7 @@ class App extends Component {
   componentDidUpdate() {}
 
   handleClickHandler() {
-    this.setState({ isLoggedIn: true });
+    this.setState({ isLoggedIn: !this.state.isLoggedIn });
   }
 
   render() {
