@@ -53,17 +53,17 @@ class App extends Component {
   render() {
     const list = [1, 2, 3, 4, 5];
     const items = list.map((item) => <p key={item}>{item}</p>);
-
+    // console.log('App is Executed')
     return (
       <>
         <Header />
         <Button onClick={this.handleClickHandler.bind(this)}>Click</Button>
         <p>{`${this.state.isLoggedIn}`}</p>
-        {items}
+        <ul>{items}</ul>
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/contact/*" element={<Contact />} />
-          <Route path="/about" element={<About />}>
+          <Route path="/contact/*" exact element={<Contact />} />
+          <Route path="/about" exact element={<About />}>
             {/* Method 2 */}
             <Route path="aboutdetail" element={<AboutDetail />} />
           </Route>
@@ -74,3 +74,31 @@ class App extends Component {
 }
 
 export default App;
+
+const child = (props) => {
+  console.log(props.name);
+  console.log(props["name"]);
+};
+
+const parent = () => {
+  const data = { name: "Joel", age: 30, school: "AltSchool" };
+  child(data);
+};
+
+// parent()
+
+// test('hello')
+// test([1,2,3,4])
+// tes
+
+const data = { name: "Joel", age: 30, school: "AltSchool" };
+
+// console.log(myAge)
+
+// const root = document.getElementById("root");
+
+// const getDataFn = function(e){
+//   console.log("Okay", e);
+// };
+
+// root.addEventListener("click", getDataFn);

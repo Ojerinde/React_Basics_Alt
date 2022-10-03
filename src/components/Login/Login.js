@@ -1,4 +1,3 @@
-
 import { useContext, useState } from "react";
 import AppContext from "../../store/AppContext";
 import Button from "../UI/Button";
@@ -7,6 +6,7 @@ import Input from "../UI/Input";
 
 import "./Login.css";
 const Login = (props) => {
+  console.log('I am Executed')
   const [name, setName] = useState("");
 
   const ctx = useContext(AppContext);
@@ -19,10 +19,13 @@ const Login = (props) => {
     e.preventDefault();
 
     // ctx.createItem(name);
-    ctx.deleteItem(name)
+    // ctx.deleteItem(name);
 
     console.log(ctx.items);
   };
+  // const getDataFromChild = (data) => {
+  //   console.log(data);
+  // }
 
   return (
     <Card className="login__box">
@@ -35,6 +38,17 @@ const Login = (props) => {
           name="name"
           onChange={nameChangeHandler}
           value={name}
+          // getData={getDataFromChild}
+        />
+         <Input
+          label="Name"
+          id="name"
+          type="text"
+          placeholder="Enter your name"
+          name="name"
+          onChange={nameChangeHandler}
+          value={name}
+          // getData={getDataFromChild}
         />
         <Button type="submit">Submit!</Button>
       </form>

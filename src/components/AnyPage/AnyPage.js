@@ -2,6 +2,8 @@ import { useLocation, useParams, useSearchParams } from "react-router-dom";
 import Card from "../UI/Card";
 
 const AnyPage = () => {
+  console.log('AnyPage is Executed')
+
   const { id } = useParams();
 //   const { pathname, search } = useLocation();
 
